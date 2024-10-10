@@ -1,0 +1,323 @@
+@use "../abstracts";
+
+%flexItemCenter {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 20px 135px;
+    background: transparent;
+
+    @include abstracts.screen(xl) {
+        padding: 20px 35px;
+    }
+
+    &__inner {
+        @extend %flexItemCenter;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__logo {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: var(--color-yellow-48);
+        font-family: "Subjectivity";
+
+        @include abstracts.screen(md) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__background {
+        display: block;
+        width: 100%;
+        height: 120vh;
+        object-fit: cover;
+
+        @include abstracts.screen(lg) {
+            height: 80vh;
+        }
+    }
+
+    &__container {
+        position: relative;
+        margin-top: -90px;
+    }
+}
+
+.navbar {
+    border: 2px solid var(--color-white-solid);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(7px);
+    opacity: 0.8;
+
+    &__list {
+        @extend %flexItemCenter;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__item {
+        padding: 5px;
+    }
+
+    &__link {
+        display: block;
+        padding: 12px 24px;
+        border-radius: 5px;
+
+        color: #cecdcd;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        transition: 0.25s linear;
+
+        @include abstracts.screen(lg) {
+            padding-left: 0;
+        }
+
+        &--active,
+        &:hover {
+            background: var(--color-white-solid);
+            color: var(--color-black-solid);
+
+            @include abstracts.screen(lg) {
+                background: initial;
+                color: var(--color-white-solid);
+            }
+        }
+    }
+}
+
+.header-box {
+    position: absolute;
+    top: 50%;
+    left: 135px;
+    translate: 0 -50%;
+
+    padding: 28px 14px;
+    border: 2px solid var(--color-white-solid);
+    border-radius: 22px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(7px);
+    opacity: 0.8;
+
+    @include abstracts.screen(lg) {
+        translate: 0 -40%;
+        left: 30px;
+    }
+
+    &__title {
+        @include abstracts.screen(lg) {
+            font-size: 1.6rem !important;
+        }
+    }
+
+    &__form {
+        margin-top: 28px;
+    }
+
+    &__input {
+        display: block;
+        width: 388px;
+        padding: 12px 8px;
+        border: 2px solid var(--color-white-solid);
+        border-radius: 5px;
+        color: var(--color-white-solid);
+        font-size: 1.6rem;
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+        }
+
+        &::placeholder {
+            color: var(--color-white-solid);
+        }
+
+        &:focus-within,
+        &:focus-within::placeholder {
+            color: var(--color-black-solid);
+            background: #e8e8e8;
+        }
+
+        &--small {
+            width: 194px;
+
+            @include abstracts.screen(lg) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__input + &__input {
+        margin-top: 16px;
+    }
+
+    &__wrap {
+        @extend %flexItemCenter;
+        gap: 16px;
+        margin-top: 16px;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        color: var(--color-white-solid);
+        border: 1px solid var(--color-white-solid);
+        padding: 13px;
+        border-radius: 10px;
+        transition: 0.25s ease;
+
+        &:hover {
+            color: var(--color-black-solid);
+            background: var(--color-white-solid);
+        }
+    }
+}
+
+.header-content {
+    position: absolute;
+    right: 135px;
+    bottom: 50px;
+    display: flex;
+    width: 70%;
+
+    @include abstracts.screen(xxl) {
+        width: 80%;
+    }
+
+    @include abstracts.screen(xl) {
+        width: 100%;
+        right: 20px;
+    }
+
+    @include abstracts.screen(lg) {
+        bottom: 30%;
+    }
+
+    &__title {
+        text-align: end;
+        font-size: 8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Subjectivity";
+        background: -webkit-linear-gradient(var(--color-white-solid), #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include abstracts.screen(xl) {
+            font-size: 6.8rem;
+        }
+    }
+}
+
+.header-action {
+    position: relative;
+    @extend %flexItemCenter;
+    gap: 30px;
+
+    &__icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    &__btn {
+        padding: 12px 22px;
+        background: var(--color-white-solid);
+        border-radius: 8px;
+
+        color: var(--color-black-solid);
+        font-size: 1.8rem;
+        font-weight: 500;
+
+        @include abstracts.screen(lg) {
+            display: inline-block;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__quantity {
+        position: absolute;
+        top: 0;
+        right: -10px;
+
+        @extend %flexItemCenter;
+        justify-content: center;
+
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: var(--color-white-solid);
+        border: 1px solid var(--color-black-solid);
+
+        font-weight: 600;
+    }
+}
+
+.mobile {
+    position: fixed;
+    inset: 0 50% 0 0;
+    background: var(--color-black-solid);
+    z-index: 99;
+    padding: 20px 50px;
+    translate: -100%;
+    transition: translate 0.5s;
+
+    @include abstracts.screen(lg) {
+        padding: 20px 30px;
+    }
+
+    @include abstracts.screen(sm) {
+        inset: 0 20% 0 0;
+    }
+
+    &.show {
+        translate: 0;
+        box-shadow: 0px 40px 90px 20px var(--color-black-solid);
+    }
+
+    &.hide ~ &__overlay {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &.show ~ &__overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__overlay {
+        visibility: hidden;
+        opacity: 0;
+
+        @include abstracts.screen(lg) {
+            visibility: visible;
+            opacity: 1;
+            position: fixed;
+            inset: 0;
+            z-index: 88;
+            background: rgba($color: #fff, $alpha: 0.4);
+        }
+    }
+}

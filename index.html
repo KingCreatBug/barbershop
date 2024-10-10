@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Embed fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- JS load -->
+        <script src="./assets/js/load.js"></script>
+        <title>2K Barbershop</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Main -->
+        <main>
+            <!-- Home header -->
+            <div class="header__container">
+                <img
+                    src="./assets/img/bg3.jpg"
+                    alt=""
+                    class="header__background"
+                />
+                <div class="header-box">
+                    <h2 class="header-box__title section-heading">
+                        Make an appointment
+                    </h2>
+                    <form action="" class="header-box__form">
+                        <input
+                            placeholder="Johnny"
+                            type="text"
+                            class="header-box__input"
+                        />
+                        <input
+                            placeholder="Email"
+                            type="email"
+                            class="header-box__input"
+                        />
+                        <input
+                            placeholder="Phone"
+                            type="tel"
+                            class="header-box__input"
+                        />
+                        <div class="header-box__wrap">
+                            <input
+                                placeholder="02/10/2024 10:00AM"
+                                type="datetime"
+                                class="header-box__input header-box__input--small"
+                            />
+                            <button class="header-box__btn">
+                                Submit request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <section class="header-content d-lg-none">
+                    <h2 class="header-content__title">
+                        Where tradition meets modern style
+                    </h2>
+                </section>
+            </div>
+
+            <!-- About -->
+            <div class="about">
+                <div class="container">
+                    <section class="about-content">
+                        <div class="about-content__top">
+                            <div class="about-content__wrap">
+                                <img
+                                    src="./assets/img/about/about-bg.png"
+                                    alt=""
+                                    class="about-content__img"
+                                />
+                                <p class="about-content__text">2022</p>
+                            </div>
+                            <div>
+                                <h2
+                                    class="about-content__title section-heading"
+                                >
+                                    2K Barbermenu, your classic barbershop with
+                                    a touch of elegance and class.
+                                </h2>
+                                <p class="about-content__desc section-desc">
+                                    Established in 2022, this modern and
+                                    minimalist themed barbershop is a fresh take
+                                    on barbershop style. An oasis for men of all
+                                    ages who love to be pampered (or pampered).
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="about-content__desc section-desc">
+                            With gold-trimmed walls, opulent chandeliers and
+                            vintage photos adorning the walls. It's like
+                            stepping into the classic movies The Godfather and
+                            Moulin Rouge.
+                        </p>
+
+                        <p class="about-content__desc section-desc">
+                            2k is a classic barbershop specializing in haircuts,
+                            hot foam shaves, shampoos, perms, color treatments,
+                            and beard care. A “Dazzler” (a costumed girl) will
+                            massage customers’ hands and necks with
+                        </p>
+
+                        <p class="about-content__desc section-desc">
+                            So come and be a part of the wonderful experience at
+                            2k Barbershop. You will leave feeling like a true
+                            gentleman.
+                        </p>
+
+                        <button class="btn js-toggle" toggle-target="#booking">
+                            <svg
+                                class="btn-icon"
+                                width="180px"
+                                height="60px"
+                                viewBox="0 0 180 60"
+                                class="border"
+                            >
+                                <polyline
+                                    points="179,1 179,59 1,59 1,1 179,1"
+                                    class="bg-line"
+                                />
+                                <polyline
+                                    points="179,1 179,59 1,59 1,1 179,1"
+                                    class="hl-line"
+                                />
+                            </svg>
+                            <span class="btn-span">Book now</span>
+                        </button>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Recruitment -->
+            <div class="rec">
+                <div class="container">
+                    <div class="rec__inner">
+                        <section class="rec-content">
+                            <h2 class="section-heading-lv2">
+                                Join the 2K barber family
+                            </h2>
+                            <p class="rec-content__desc section-desc-lv2">
+                                We are looking for talented, passionate
+                                individuals who want to join our Barbershop 2K
+                                Family. We have important work for you to do.
+                                And don't worry, we won't ask you to commit any
+                                crimes.
+                            </p>
+                            <a href="#!" class="btn-border rec-content__btn"
+                                >Apply now</a
+                            >
+                        </section>
+                        <img
+                            src="./assets/img/recruitment/rec-img.jpg"
+                            alt=""
+                            class="rec__img"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu -->
+            <div class="menu">
+                <div class="menu-container">
+                    <img
+                        src="./assets/img/menu/menu.png"
+                        alt=""
+                        class="menu-container__menu"
+                    />
+
+                    <a href="./contact.html" class="menu__btn btn-border"
+                        >Contact!!</a
+                    >
+
+                    <div class="menu-container__wrap">
+                        <button
+                            data-target="regularCut"
+                            class="menu-container__btn"
+                        ></button>
+                        <button
+                            data-target="colorHair"
+                            class="menu-container__btn"
+                        ></button>
+                        <button
+                            data-target="adultHaircut"
+                            class="menu-container__btn"
+                        ></button>
+                        <button
+                            data-target="beardVitamins"
+                            class="menu-container__btn"
+                        ></button>
+                        <button
+                            data-target="hairCare"
+                            class="menu-container__btn"
+                        ></button>
+                        <button
+                            data-target="beardTrim"
+                            class="menu-container__btn"
+                        ></button>
+                        <button
+                            data-target="pomade"
+                            class="menu-container__btn"
+                        ></button>
+                        <button
+                            data-target="faceMassage"
+                            class="menu-container__btn"
+                        ></button>
+                        <button
+                            data-target="hairWashing"
+                            class="menu-container__btn"
+                        ></button>
+                    </div>
+
+                    <div class="menu-wraps">
+                        <!-- Regular cut -->
+                        <article id="regularCut" class="menu-wrap">
+                            <img
+                                src="./assets/img/menu/regularCut.jpg"
+                                alt=""
+                                class="menu-wrap__img"
+                            />
+                            <h3 class="menu-wrap__title section-heading">
+                                Regular cut
+                            </h3>
+                            <p class="menu-wrap__desc section-desc">
+                                A regular cut is a classic men's haircut with
+                                short sides and back, and slightly longer hair
+                                on top. It's clean, balanced, and easy to
+                                maintain.
+                            </p>
+                        </article>
+
+                        <!-- Hair color -->
+                        <article id="colorHair" class="menu-wrap">
+                            <img
+                                src="./assets/img/menu/hairColor.jpg"
+                                alt=""
+                                class="menu-wrap__img"
+                            />
+                            <h3 class="menu-wrap__title section-heading">
+                                Hair color
+                            </h3>
+                            <p class="menu-wrap__desc section-desc">
+                                Hair dye is a chemical product used to change
+                                hair color, offering shades from natural tones
+                                to bold, vibrant hues, either permanently or
+                                temporarily.
+                            </p>
+                        </article>
+
+                        <!-- Adult haircut -->
+                        <article id="adultHaircut" class="menu-wrap">
+                            <img
+                                src="./assets/img/menu/adultHaircut.jpg"
+                                alt=""
+                                class="menu-wrap__img"
+                            />
+                            <h3 class="menu-wrap__title section-heading">
+                                Adult haircut
+                            </h3>
+                            <p class="menu-wrap__desc section-desc">
+                                Hair dye is a chemical product used to change
+                                hair color, offering shades from natural tones
+                                to bold, vibrant hues, either permanently or
+                                temporarily.
+                            </p>
+                        </article>
+
+                        <!-- Beard vitamins -->
+                        <article id="beardVitamins" class="menu-wrap">
+                            <img
+                                src="./assets/img/menu/beardVitamins.jpg"
+                                alt=""
+                                class="menu-wrap__img"
+                            />
+                            <h3 class="menu-wrap__title section-heading">
+                                Beard vitamins
+                            </h3>
+                            <p class="menu-wrap__desc section-desc">
+                                Hair dye is a chemical product used to change
+                                hair color, offering shades from natural tones
+                                to bold, vibrant hues, either permanently or
+                                temporarily.
+                            </p>
+                        </article>
+
+                        <!-- Hair care -->
+                        <article id="hairCare" class="menu-wrap">
+                            <img
+                                src="./assets/img/menu/hairCare.jpg"
+                                alt=""
+                                class="menu-wrap__img"
+                            />
+                            <h3 class="menu-wrap__title section-heading">
+                                Hair care
+                            </h3>
+                            <p class="menu-wrap__desc section-desc">
+                                Hair care involves practices to maintain hair
+                                health, including cleansing, conditioning,
+                                moisturizing, and protecting hair from damage to
+                                promote strength, shine, and overall appearance.
+                            </p>
+                        </article>
+
+                        <!-- Beard trim -->
+                        <article id="beardTrim" class="menu-wrap">
+                            <img
+                                src="./assets/img/menu/beardTrim.jpg"
+                                alt=""
+                                class="menu-wrap__img"
+                            />
+                            <h3 class="menu-wrap__title section-heading">
+                                Beard trim
+                            </h3>
+                            <p class="menu-wrap__desc section-desc">
+                                A beard trim shapes and refines facial hair,
+                                maintaining a neat, even length while enhancing
+                                your natural look by defining edges and removing
+                                stray or uneven hairs.
+                            </p>
+                        </article>
+
+                        <!-- Pomade -->
+                        <article id="pomade" class="menu-wrap">
+                            <img
+                                src="./assets/img/menu/pomade.jpg"
+                                alt=""
+                                class="menu-wrap__img"
+                            />
+                            <h3 class="menu-wrap__title section-heading">
+                                Pomade
+                            </h3>
+                            <p class="menu-wrap__desc section-desc">
+                                Pomade is a styling product that provides a
+                                strong hold and shiny finish, ideal for slick
+                                hairstyles and control, allowing for versatile
+                                looks throughout the day.
+                            </p>
+                        </article>
+
+                        <!-- Face massage -->
+                        <article id="faceMassage" class="menu-wrap">
+                            <img
+                                src="./assets/img/menu/faceMessage.jpg"
+                                alt=""
+                                class="menu-wrap__img"
+                            />
+                            <h3 class="menu-wrap__title section-heading">
+                                Face massage
+                            </h3>
+                            <p class="menu-wrap__desc section-desc">
+                                A face massage promotes relaxation and
+                                rejuvenation by improving circulation, reducing
+                                tension, and enhancing skin tone, resulting in a
+                                healthier, more radiant complexion.
+                            </p>
+                        </article>
+
+                        <!-- Hair washing -->
+                        <article id="hairWashing" class="menu-wrap">
+                            <img
+                                src="./assets/img/menu/hairWashing.jpg"
+                                alt=""
+                                class="menu-wrap__img"
+                            />
+                            <h3 class="menu-wrap__title section-heading">
+                                Hair washing
+                            </h3>
+                            <p class="menu-wrap__desc section-desc">
+                                Hair washing involves cleansing the scalp and
+                                strands with shampoo to remove dirt, oil, and
+                                product buildup, promoting a healthy, clean, and
+                                refreshed appearance.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shop -->
+            <div class="shop">
+                <div class="container">
+                    <h2 class="shop__title section-heading">Zone for men</h2>
+                    <div class="shop__list">
+                        <!-- Shop Item 1 -->
+                        <article class="shop-item">
+                            <h3 class="shop-item__name section-heading">
+                                Red One
+                            </h3>
+                            <div class="shop-item__thumb">
+                                <img
+                                    src="./assets/img/shop/prod1.png"
+                                    alt=""
+                                    class="shop-item__img"
+                                />
+                            </div>
+                            <p class="shop-item__desc section-desc d-lg-none">
+                                Red One hair wax holds hair well, is not sticky,
+                                fragrant, and natural.
+                            </p>
+                        </article>
+
+                        <!-- Shop Item 2 -->
+                        <article class="shop-item">
+                            <h3 class="shop-item__name section-heading">
+                                Natulique
+                            </h3>
+                            <div class="shop-item__thumb">
+                                <img
+                                    src="./assets/img/shop/prod5.png"
+                                    alt=""
+                                    class="shop-item__img"
+                                />
+                            </div>
+                            <p class="shop-item__desc section-desc d-lg-none">
+                                Natulique has strong hold, is not sticky, and is
+                                natural.
+                            </p>
+                        </article>
+
+                        <!-- Shop Item 3 -->
+                        <article class="shop-item">
+                            <h3 class="shop-item__name section-heading">
+                                Red one
+                            </h3>
+                            <div class="shop-item__thumb">
+                                <img
+                                    src="./assets/img/shop/prod3.png"
+                                    alt=""
+                                    class="shop-item__img"
+                                />
+                            </div>
+                            <p class="shop-item__desc section-desc d-lg-none">
+                                Red one wax has strong hold, is not sticky, and
+                                is natural.
+                            </p>
+                        </article>
+
+                        <!-- Shop Item 4 -->
+                        <article class="shop-item">
+                            <h3 class="shop-item__name section-heading">
+                                Red one
+                            </h3>
+                            <div class="shop-item__thumb">
+                                <img
+                                    src="./assets/img/shop/prod4.webp"
+                                    alt=""
+                                    class="shop-item__img"
+                                />
+                            </div>
+                            <p class="shop-item__desc section-desc d-lg-none">
+                                Red one wax has strong hold, is not sticky, and
+                                is natural.
+                            </p>
+                        </article>
+                    </div>
+                    <button onclick="moTrang()" class="shop__btn btn">
+                        <svg
+                            class="btn-icon"
+                            width="180px"
+                            height="60px"
+                            viewBox="0 0 180 60"
+                            class="border"
+                        >
+                            <polyline
+                                points="179,1 179,59 1,59 1,1 179,1"
+                                class="bg-line"
+                            />
+                            <polyline
+                                points="179,1 179,59 1,59 1,1 179,1"
+                                class="hl-line"
+                            />
+                        </svg>
+                        <span class="btn-span">Go Shopping</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Team -->
+            <div class="team">
+                <div class="container">
+                    <section class="team-content">
+                        <h2 class="team-content__title section-heading">
+                            Meet our experts
+                        </h2>
+                        <p class="team-content__desc section-desc">
+                            Each member of our team is committed to providing an
+                            exceptional grooming experience, ensuring you leave
+                            our shop looking and feeling your best
+                        </p>
+                    </section>
+
+                    <div class="team-containers">
+                        <!-- Team Item 1 -->
+                        <article class="team-container">
+                            <div class="team-container__wrap">
+                                <section class="team-container__box">
+                                    <h3 class="team-container__name">
+                                        Nguyen Van Thinh
+                                    </h3>
+                                    <p class="team-container__position">
+                                        Master Barber
+                                    </p>
+                                </section>
+
+                                <div class="team-container__socials">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icon/facebook.svg"
+                                            alt=""
+                                            class="team-container__social"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icon/instagram.svg"
+                                            alt=""
+                                            class="team-container__social"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/img/team/team1.png"
+                                alt=""
+                                class="team-container__img"
+                            />
+                        </article>
+
+                        <!-- Team Item 2 -->
+                        <article class="team-container">
+                            <div class="team-container__wrap">
+                                <section class="team-container__box">
+                                    <h3 class="team-container__name">
+                                        Nguyen Van Thinh
+                                    </h3>
+                                    <p class="team-container__position">
+                                        Master Barber
+                                    </p>
+                                </section>
+
+                                <div class="team-container__socials">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icon/facebook.svg"
+                                            alt=""
+                                            class="team-container__social"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icon/instagram.svg"
+                                            alt=""
+                                            class="team-container__social"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/img/team/team2.png"
+                                alt=""
+                                class="team-container__img"
+                            />
+                        </article>
+
+                        <!-- Team Item 3 -->
+                        <article class="team-container">
+                            <div class="team-container__wrap">
+                                <section class="team-container__box">
+                                    <h3 class="team-container__name">
+                                        Nguyen Van Thinh
+                                    </h3>
+                                    <p class="team-container__position">
+                                        Master Barber
+                                    </p>
+                                </section>
+
+                                <div class="team-container__socials">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icon/facebook.svg"
+                                            alt=""
+                                            class="team-container__social"
+                                        />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/icon/instagram.svg"
+                                            alt=""
+                                            class="team-container__social"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/img/team/team3.png"
+                                alt=""
+                                class="team-container__img"
+                            />
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <!-- Modal -->
+        <div>
+            <div id="booking" class="booking hide">
+                <h2
+                    class="booking__title section-heading section-heading--other"
+                >
+                    staff scheduling
+                </h2>
+                <form action="" class="form">
+                    <div class="form__container">
+                        <div class="form-group">
+                            <label class="form-group__label" for="nameUser"
+                                >Your Name</label
+                            >
+                            <input
+                                placeholder="Johnny"
+                                type="text"
+                                class="form-group__input"
+                                id="nameUser"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-group__label" for="emailUser"
+                                >Your Email</label
+                            >
+                            <input
+                                placeholder="Email"
+                                type="email"
+                                class="form-group__input"
+                                id="emailUser"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form__container">
+                        <div class="form-group">
+                            <label class="form-group__label" for="phoneUser"
+                                >Your Phone</label
+                            >
+                            <input
+                                placeholder="Phone"
+                                type="tel"
+                                class="form-group__input"
+                                id="phoneUser"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-group__label" for="dateUser"
+                                >Appointment Date</label
+                            >
+                            <input
+                                placeholder="02/10/2024 10:00AM"
+                                type="datetime"
+                                class="form-group__input"
+                                id="dateUser"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form__container">
+                        <div class="form-group">
+                            <label class="form-group__label" for="staff"
+                                >Booking Name Staff
+                            </label>
+                            <input
+                                placeholder="Name Staff"
+                                type="staff"
+                                class="form-group__input"
+                                id="phoneUser"
+                            />
+                            <button class="booking__btn btn">
+                                Submit request
+                            </button>
+                        </div>
+
+                        <div class="form__wrap d-lg-none">
+                            <img
+                                src="./assets/img/qr.png"
+                                alt=""
+                                class="form__qr"
+                            />
+                            <p class="form__text">
+                                Please transfer $10 in advance to make an
+                                appointment, when you arrive at the scheduled
+                                time we will refund this amount to you
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="booking__overlay" toggle-target="#booking"></div>
+        </div>
+
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
